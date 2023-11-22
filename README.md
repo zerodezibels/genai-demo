@@ -1,1 +1,1 @@
-# genai_demo
+# genai-demo
