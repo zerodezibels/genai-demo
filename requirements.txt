@@ -1,10 +1,6 @@
 openai
-datetime
 langchain
 streamlit
-os
-IPython
-time
 docarray
 tiktoken
 pydantic==1.10.9
