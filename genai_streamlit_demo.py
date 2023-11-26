@@ -92,10 +92,12 @@ if button_clicked:
         with st.spinner('Getting Response from ChatGPT'):
             qa_stuff = load_db(1)
             response = qa_stuff.run(query_append)
+            st.session_state['response'] = response
 
         st.success('Here are the results')
 
         st.markdown(response)
 
     else:
-        st.write("No New Query Submitted")
+        st.write("No New Query Submitted. Displaying Last Result")
+        st.markdown(st.session_state['response'])
