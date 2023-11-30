@@ -86,10 +86,10 @@ if button_clicked:
         else:
             query_append = query + '. Return response in markdown table format and provide short summary for each one along with product code'
 
-        st.write("Actual Query submitted to ChatGPT")
-        st.write(query_append)
+        #st.write("Actual Query submitted to ChatGPT")
+        #st.write(query_append)
 
-        with st.spinner('Getting Response from ChatGPT'):
+        with st.spinner('Fetching Response....'):
             qa_stuff = load_db(1)
             response = qa_stuff.run(query_append)
             st.session_state['response'] = response
